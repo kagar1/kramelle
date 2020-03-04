@@ -2,7 +2,7 @@ import React from "react";
 import { View, Button, TextInput, StyleSheet, FlatList, Text } from "react-native";
 import films from "../Helpers/filmData.js";
 import FilmItem from "./FilmItem.js";
-import { getFilmsFromApiWithSearchedText } from "../API/TMDBApi.js";
+import { getFilmsFromApiWithSearchedText, getImageFromApi } from "../API/TMDBApi.js";
 
 class Search extends React.Component {
     constructor(props){

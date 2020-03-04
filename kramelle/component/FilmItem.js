@@ -1,5 +1,6 @@
 import React from "react";
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View, Text, Image} from "react-native";
+import { getFilmsFromApiWithSearchedText, getImageFromApi } from "../API/TMDBApi.js";
 
 class FilmItem extends React.Component{
     render(){
@@ -7,7 +8,7 @@ class FilmItem extends React.Component{
         return(
             <View style={styles.main1}>
                 <View style={styles.image1}>
-                    
+                    <Image style={styles.picture} source ={{uri: getImageFromApi(film.poster_path)}} />
                 </View>
                 <View style={styles.textBox}>
                     <View style={styles.titreBox}>
@@ -44,7 +45,11 @@ const styles = StyleSheet.create({
     },
     image1:{
         flex:1,
-        backgroundColor:'gray',
+        
+    },
+    picture:{
+        flex:1,
+        height: 120,
     },
     description:{
         flex:1,
