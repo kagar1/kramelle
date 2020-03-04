@@ -1,19 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Search from "./component/Search.js";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello word welcome to Karamel</Text>
-    </View>
+    <Search />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'gray',
   },
 });
