@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     },
     picture:{
         flex:1,
-        height: 120,
+        height: 115,
     },
     description:{
         flex:1,
